@@ -34,4 +34,8 @@ export class AppComponent implements OnInit {
   }
 
   title = 'angularwithasp.client';
+
+  changeTitle() {
+    this.title = 'Nombre Cambiado';
+  }
 }
