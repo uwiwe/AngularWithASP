@@ -1,2 +1,9 @@
-<h1>{{ product.title }}</h1>
+<ng-template *ngIf="product"> <!-- Significa que solo se renderiza si hay algo en product -->
+<h2>{{ product.title }}</h2>
 <p>$ {{ product.price }}</p>
+<img [src]="product.images[0]" alt=""> <!-- <img src="{{ product.images[0] }}" alt=""> ES IGUAL-->
+</ng-template>
+
+<ng-template *ngIf="!product">
+    Producto no renderizado
+</ng-template>
