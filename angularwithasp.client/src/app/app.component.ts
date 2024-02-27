@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { Product } from './models/product.model';
 
 @Component({

@@ -1,7 +1,7 @@
 <ng-container *ngIf="product"> <!-- Significa que solo se renderiza si hay algo en product -->
 <h2>{{ product.title }}</h2>
 <p>$ {{ product.price }}</p>
-<img [src]="product.images[0]" alt=""> <!-- <img src="{{ product.images[0] }}" alt=""> ES IGUAL-->
+<img [ngSrc]="product.images[0]" width="640" height="480"> <!-- <img ngSrc="{{ product.images[0] }}" alt=""> ES IGUAL ... Le pongo ngSrc para lazyLoading y width height para que cargue mejor-->
 </ng-container>
 
 <ng-container *ngIf="!product">
