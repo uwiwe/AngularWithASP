@@ -10,7 +10,7 @@ import { Product } from './models/product.model';
 })
 export class AppComponent {
   title = 'eCommerce-app'
-  http = inject(HttpClient); // voy a usar el httpclient patron de injeccion de dependencias
+  http = inject(HttpClient); // voy a usar el httpclient es un patron de injeccion de dependencias
   products: Product[] = [];
   
   changeTitle() {
