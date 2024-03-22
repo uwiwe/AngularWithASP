@@ -4,3 +4,10 @@ export interface Product {
     price: number;
     images: string[];
 }
+
+// export interface Product {
+//     id: ;
+//     title: string;
+//     price: ;
+//     images: [];
+// }
