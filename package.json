@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nguniversal/express-engine": "^16.2.0"
+  }
+}
