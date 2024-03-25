@@ -16,12 +16,4 @@ export class AppComponent {
   changeTitle() {
     this.title = 'Nombre Cambiado';
   }
-
-  ngOnInit() { //Es para hacer algo con mi componente cuando ya esta renderizado
-    this.http.get<Product[]>('https://api.escuelajs.co/api/v1/products') //Hacer una peticion, llamo a la api fake de platzi <Product[]> significa que va a recibir un array de Product
-    .subscribe((data) => { //subscribe es algo similar a resolver una promesa. Data es un array de product, lista de productos
-      this.products = data;
-    });
-
-  }
 }
